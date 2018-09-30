@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace AmadeusProjects.Controllers
-{
+{   
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -23,6 +23,12 @@ namespace AmadeusProjects.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult ProjectDetails(int id)
+        {
 
             return View();
         }
